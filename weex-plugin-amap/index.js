@@ -782,7 +782,7 @@
 	    return match && match[1];
 	  }
 	  var loader = getUrlParam('loader') || 'xhr';
-	  var page = getUrlParam('page') || '../dist/index.js';
+	  var page = getUrlParam('page') || './dist/index.js';
 	  window.weex.init({
 	    appId: location.href,
 	    loader: loader,
