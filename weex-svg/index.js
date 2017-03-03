@@ -558,11 +558,11 @@
 	      demos: [{
 	        name: 'animation',
 	        icon: 'http://img1.vued.vanthink.cn/vued3be8484ba1350e3f81f8c9ad447c435f.png',
-	        url: 'page/animation.js'
+	        url: 'pages/animation.js'
 	      }, {
 	        name: 'complex svg shape',
 	        icon: 'http://img1.vued.vanthink.cn/vued1d89bd6213951e62d0bad242093c82ce.png',
-	        url: 'page/complex-shape.js'
+	        url: 'pages/complex-shape.js'
 	      }]
 
 	    };
