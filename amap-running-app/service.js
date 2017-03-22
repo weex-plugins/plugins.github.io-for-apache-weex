@@ -1,9 +1,9 @@
 var cacheStorageKey = 'app-pwa-2017';
 var cacheList = [
   '/',
-  'amap-running-app/index.html',
-  'amap-running-app/weex.min.j',
-  'amap-running-app/running.js'
+  'index.html',
+  'weex.min.j',
+  'running.js'
 ]
 
 self.addEventListener('install', function(e) {
