@@ -2,7 +2,7 @@ var cacheStorageKey = 'app-pwa-2017';
 var cacheList = [
   '/',
   'index.html',
-  'weex.min.j',
+  'weex.min.js',
   'running.js'
 ]
 
