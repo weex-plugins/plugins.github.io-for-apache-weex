@@ -50,14 +50,14 @@
 	var __vue_styles__ = []
 
 	/* styles */
-	__vue_styles__.push(__webpack_require__(32)
+	__vue_styles__.push(__webpack_require__(46)
 	)
 
 	/* script */
-	__vue_exports__ = __webpack_require__(33)
+	__vue_exports__ = __webpack_require__(47)
 
 	/* template */
-	var __vue_template__ = __webpack_require__(34)
+	var __vue_template__ = __webpack_require__(48)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -69,15 +69,19 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/ali-130257n/www/weex-svg/demos/pages/com-rect.vue"
+	__vue_options__.__file = "/Users/ali-130257n/www/weex-svg/demos/pages/pressure.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	__vue_options__._scopeId = "data-v-2574f9e0"
 	__vue_options__.style = __vue_options__.style || {}
 	__vue_styles__.forEach(function (module) {
-	for (var name in module) {
-	__vue_options__.style[name] = module[name]
-	}
+	  for (var name in module) {
+	    __vue_options__.style[name] = module[name]
+	  }
 	})
+	if (typeof __register_static_styles__ === "function") {
+	  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+	}
 
 	module.exports = __vue_exports__
 	module.exports.el = 'true'
@@ -269,7 +273,7 @@
 
 /***/ },
 
-/***/ 18:
+/***/ 19:
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
@@ -298,19 +302,23 @@
 	__vue_options__.__file = "/Users/ali-130257n/www/weex-svg/demos/include/navbar.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	__vue_options__._scopeId = "data-v-75f1a292"
 	__vue_options__.style = __vue_options__.style || {}
 	__vue_styles__.forEach(function (module) {
-	for (var name in module) {
-	__vue_options__.style[name] = module[name]
-	}
+	  for (var name in module) {
+	    __vue_options__.style[name] = module[name]
+	  }
 	})
+	if (typeof __register_static_styles__ === "function") {
+	  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+	}
 
 	module.exports = __vue_exports__
 
 
 /***/ },
 
-/***/ 32:
+/***/ 46:
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -337,106 +345,157 @@
 	  "item-shape": {
 	    "width": 600,
 	    "height": 480
+	  },
+	  "item-shape2": {
+	    "width": 600,
+	    "height": 600
+	  },
+	  "btn": {
+	    "padding": 20,
+	    "backgroundColor": "#1ba1e2"
+	  },
+	  "btn-text1": {
+	    "paddingLeft": 30,
+	    "paddingRight": 30,
+	    "color": "#ffffff"
 	  }
 	}
 
 /***/ },
 
-/***/ 33:
+/***/ 47:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _navbar = __webpack_require__(18);
+	var _navbar = __webpack_require__(19);
 
 	var _navbar2 = _interopRequireDefault(_navbar);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	var circleArr = []; //
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+
+	for (var i = 4; i < 150; i += 4) {
+	  circleArr.push({ r: i, color: ['#', i, i, i, i, i, i].join('').substr(0, 7) });
+	}
 	module.exports = {
 	  components: {
 	    navbar: _navbar2.default
+	  },
+
+	  data: function data() {
+	    return {
+	      circles: circleArr,
+	      randomShapes: {
+	        circles: [],
+	        rects: [],
+	        polygon: []
+	      },
+	      points: '100,100 100,200'
+	    };
+	  },
+
+
+	  methods: {
+	    genRandomShapes: function genRandomShapes() {
+	      function genRect() {
+	        return {
+	          x: Math.floor(Math.random() * 300),
+	          y: Math.floor(Math.random() * 300),
+	          w: Math.floor(Math.random() * 300),
+	          h: Math.floor(Math.random() * 300)
+	        };
+	      }
+	      console.log(this.randomShapes.rects);
+	      this.randomShapes.rects.push(genRect());
+	    },
+	    changePath: function changePath() {
+	      var dots = 3 + Math.floor(Math.random() * 10);
+	      var path = [];
+	      for (var _i = 0; _i < dots; _i++) {
+	        path.push(Math.floor(Math.random() * 600) + ',' + Math.floor(Math.random() * 600));
+	      }
+	      this.points = path.join(' ');
+	    }
 	  }
 
-	}; //
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
+	};
 
 /***/ },
 
-/***/ 34:
+/***/ 48:
 /***/ function(module, exports) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -445,173 +504,71 @@
 	  }, [_c('navbar', {
 	    attrs: {
 	      "back": "true",
-	      "title": "rect"
+	      "title": "pressure"
 	    }
 	  }), _c('scroller', {
 	    staticClass: ["main"]
 	  }, [_c('text', {
 	    staticClass: ["desc"]
-	  }, [_vm._v("The rect component is an SVG basic shape, used to create rectangles based on the position of a corner and their width and height")]), _c('div', {
+	  }, [_vm._v("this is simple pressure test ")]), _c('div', {
 	    staticClass: ["item"]
 	  }, [_c('svg', {
 	    staticClass: ["item-shape"]
-	  }, [_c('rect', {
-	    attrs: {
-	      "x": "100",
-	      "y": "50",
-	      "width": "300",
-	      "height": "300",
-	      "fill": "#f39c12"
-	    }
-	  })], 1), _c('text', {
+	  }, _vm._l((_vm.circles), function(item) {
+	    return _c('circle', {
+	      key: item.r,
+	      attrs: {
+	        "cx": "300",
+	        "cy": "200",
+	        "fill": "none",
+	        "r": item.r,
+	        "stroke": item.color,
+	        "strokeWidth": "2"
+	      }
+	    })
+	  })), _c('text', {
 	    staticClass: ["desc"]
-	  }, [_vm._v("a simple rect componnet")])], 1), _c('div', {
+	  }, [_vm._v("more than 100 cricles")])], 1), _c('div', {
 	    staticClass: ["item"]
 	  }, [_c('svg', {
-	    staticClass: ["item-shape"]
-	  }, [_c('rect', {
-	    attrs: {
-	      "x": "5",
-	      "y": "5",
-	      "width": "50",
-	      "height": "50",
-	      "fill": "#f39c12"
+	    staticClass: ["item-shape2"]
+	  }, _vm._l((_vm.randomShapes.rects), function(item) {
+	    return _c('rect', {
+	      key: item.x,
+	      attrs: {
+	        "fill": "none",
+	        "x": item.x,
+	        "y": item.y,
+	        "width": item.w,
+	        "height": item.h,
+	        "stroke": "#222",
+	        "strokeWidth": "2"
+	      }
+	    })
+	  })), _c('div', {
+	    staticClass: ["btn"],
+	    on: {
+	      "click": _vm.genRandomShapes
 	    }
-	  }), _c('rect', {
-	    attrs: {
-	      "x": "60",
-	      "y": "60",
-	      "width": "50",
-	      "height": "50",
-	      "fill": "#f39c12"
-	    }
-	  }), _c('rect', {
-	    attrs: {
-	      "x": "115",
-	      "y": "115",
-	      "width": "50",
-	      "height": "50",
-	      "fill": "#f39c12"
-	    }
-	  }), _c('rect', {
-	    attrs: {
-	      "x": "170",
-	      "y": "170",
-	      "width": "50",
-	      "height": "50",
-	      "fill": "#f39c12"
-	    }
-	  }), _c('rect', {
-	    attrs: {
-	      "x": "220",
-	      "y": "225",
-	      "width": "50",
-	      "height": "50",
-	      "fill": "#f1c40f"
-	    }
-	  })], 1), _c('text', {
-	    staticClass: ["desc"]
-	  }, [_vm._v("use x and y to set the position of shape")])], 1), _c('div', {
+	  }, [_c('text', {
+	    staticClass: ["btn-text1"]
+	  }, [_vm._v("随机添加形状")])])], 1), _c('div', {
 	    staticClass: ["item"]
 	  }, [_c('svg', {
-	    staticClass: ["item-shape"]
-	  }, [_c('rect', {
+	    staticClass: ["item-shape2"]
+	  }, [_c('polygon', {
 	    attrs: {
-	      "x": "5",
-	      "y": "5",
-	      "width": "50",
-	      "height": "50",
-	      "fill": "#f39c12"
-	    }
-	  }), _c('rect', {
-	    attrs: {
-	      "x": "60",
-	      "y": "60",
-	      "width": "100",
-	      "height": "100",
-	      "fill": "#f39c12"
-	    }
-	  }), _c('rect', {
-	    attrs: {
-	      "x": "165",
-	      "y": "160",
-	      "width": "150",
-	      "height": "150",
-	      "fill": "#f39c12"
-	    }
-	  })], 1), _c('text', {
-	    staticClass: ["desc"]
-	  }, [_vm._v("use width and height to set the size of shape")])], 1), _c('div', {
-	    staticClass: ["item"]
-	  }, [_c('svg', {
-	    staticClass: ["item-shape"]
-	  }, [_c('rect', {
-	    attrs: {
-	      "x": "5",
-	      "y": "5",
-	      "width": "100",
-	      "height": "100",
-	      "fill": "#2ecc71"
-	    }
-	  }), _c('rect', {
-	    attrs: {
-	      "x": "120",
-	      "y": "5",
-	      "width": "100",
-	      "height": "100",
-	      "fill": "#3498db"
-	    }
-	  }), _c('rect', {
-	    attrs: {
-	      "x": "240",
-	      "y": "5",
-	      "width": "100",
-	      "height": "100",
+	      "points": _vm.points,
 	      "fill": "#9b59b6"
 	    }
-	  }), _c('rect', {
-	    attrs: {
-	      "x": "5",
-	      "y": "120",
-	      "width": "100",
-	      "height": "100",
-	      "strokeWidth": "2",
-	      "fill": "#fff",
-	      "stroke": "#2ecc71"
+	  })], 1), _c('div', {
+	    staticClass: ["btn"],
+	    on: {
+	      "click": _vm.changePath
 	    }
-	  }), _c('rect', {
-	    attrs: {
-	      "x": "120",
-	      "y": "120",
-	      "width": "100",
-	      "height": "100",
-	      "strokeWidth": "2",
-	      "fill": "#fff",
-	      "stroke": "#3498db"
-	    }
-	  }), _c('rect', {
-	    attrs: {
-	      "x": "240",
-	      "y": "120",
-	      "width": "100",
-	      "height": "100",
-	      "strokeWidth": "4",
-	      "fill": "#fff",
-	      "stroke": "#9b59b6"
-	    }
-	  }), _c('rect', {
-	    attrs: {
-	      "x": "5",
-	      "y": "240",
-	      "width": "335",
-	      "height": "100",
-	      "strokeWidth": "4",
-	      "fill": "#fff",
-	      "stroke": "#9b59b6"
-	    }
-	  })], 1), _c('text', {
-	    staticClass: ["desc"]
-	  }, [_vm._v("use fill and stroke to set the color and outline of shape")])], 1)])], 1)
+	  }, [_c('text', {
+	    staticClass: ["btn-text1"]
+	  }, [_vm._v("随机改变形状")])])], 1)])], 1)
 	},staticRenderFns: []}
 	module.exports.render._withStripped = true
 

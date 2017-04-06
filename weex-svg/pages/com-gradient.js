@@ -1,3 +1,530 @@
-// { "framework": "Vue" } 
+// { "framework": "Vue" }
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
 
-!function(t){function e(r){if(n[r])return n[r].exports;var o=n[r]={i:r,l:!1,exports:{}};return t[r].call(o.exports,o,o.exports,e),o.l=!0,o.exports}var n={};e.m=t,e.c=n,e.i=function(t){return t},e.d=function(t,n,r){e.o(t,n)||Object.defineProperty(t,n,{configurable:!1,enumerable:!0,get:r})},e.n=function(t){var n=t&&t.__esModule?function(){return t.default}:function(){return t};return e.d(n,"a",n),n},e.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},e.p="",e(e.s=166)}({0:function(t,e){t.exports=function(){var t=[];return t.toString=function(){for(var t=[],e=0;e<this.length;e++){var n=this[e];n[2]?t.push("@media "+n[2]+"{"+n[1]+"}"):t.push(n[1])}return t.join("")},t.i=function(e,n){"string"==typeof e&&(e=[[null,e,""]]);for(var r={},o=0;o<this.length;o++){var s=this[o][0];"number"==typeof s&&(r[s]=!0)}for(o=0;o<e.length;o++){var i=e[o];"number"==typeof i[0]&&r[i[0]]||(n&&!i[2]?i[2]=n:n&&(i[2]="("+i[2]+") and ("+n+")"),t.push(i))}},t}},1:function(t,e){t.exports=function(t,e,n,r){var o,s=t=t||{},i=typeof t.default;"object"!==i&&"function"!==i||(o=t,s=t.default);var a="function"==typeof s?s.options:s;if(e&&(a.render=e.render,a.staticRenderFns=e.staticRenderFns),n&&(a._scopeId=n),r){var l=a.computed||(a.computed={});Object.keys(r).forEach(function(t){var e=r[t];l[t]=function(){return e}})}return{esModule:o,exports:s,options:a}}},10:function(t,e,n){n(13);var r=n(1)(n(6),n(11),null,null);r.options.__file="/Users/ali-130257n/www2/svgapp/src/include/navbar.vue",r.esModule&&Object.keys(r.esModule).some(function(t){return"default"!==t&&"__esModule"!==t})&&console.error("named exports are not supported in *.vue files."),r.options.functional&&console.error("[vue-loader] navbar.vue: functional components are not supported with templates, they should use render functions."),t.exports=r.exports},101:function(t,e,n){t.exports={render:function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("div",{staticClass:"page"},[n("navbar",{attrs:{back:"true",title:"gradient"}}),t._v(" "),n("scroller",{staticClass:"main"},[n("text",{staticClass:"desc"},[t._v("The linearGradient element lets users define linear gradients to fill or stroke graphical elements")]),t._v(" "),n("div",{staticClass:"item"},[n("svg",{staticClass:"item-shape"},[n("defs",[n("linearGradient",{attrs:{id:"myLinearGradient1",x1:"0%",y1:"0%",x2:"100%",y2:"0%",spreadMethod:"pad"}},[n("stop",{attrs:{offset:"0%","stop-color":"#ee0979","stop-opacity":"1"}}),t._v(" "),n("stop",{attrs:{offset:"100%","stop-color":"#ff6a00","stop-opacity":"1"}})],1)],1),t._v(" "),n("rect",{attrs:{x:"100",y:"50",width:"300",height:"300",fill:"url(#myLinearGradient1)"}})]),t._v(" "),n("text",{staticClass:"desc"},[t._v("linearGradient")])]),t._v(" "),n("text",{staticClass:"desc"},[t._v("Radial gradients are gradients in which the colors change circularly rather than linearly")]),t._v(" "),n("div",{staticClass:"item"},[n("svg",{staticClass:"item-shape"},[n("defs",[n("radialGradient",{attrs:{id:"myRadialGradient",fx:"50%",fy:"50%",r:"45%",spreadMethod:"pad"}},[n("stop",{attrs:{offset:"0%","stop-color":"#4776E6","stop-opacity":"1"}}),t._v(" "),n("stop",{attrs:{offset:"100%","stop-color":"#8E54E9","stop-opacity":"1"}})],1)],1),t._v(" "),n("circle",{attrs:{cx:"300",cy:"200",r:"150",fill:"url(#myRadialGradient)"}})]),t._v(" "),n("text",{staticClass:"desc"},[t._v("radialGradient")])])])],1)},staticRenderFns:[]},t.exports.render._withStripped=!0},11:function(t,e,n){t.exports={render:function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("div",{staticClass:"navbar"},[t.leftCorner?n("div",{staticClass:"btn-icon-left",on:{click:t.goHome}},[n("image",{staticClass:"btn-arrow-left",attrs:{src:t.leftCorner.src}}),t._v(" "),n("text",{staticClass:"btn-text"},[t._v(t._s(t.leftCorner.text))])]):t._e(),t._v(" "),t.back?n("div",{staticClass:"btn-icon-left",on:{click:t.goHome}},[n("image",{staticClass:"btn-arrow-left",attrs:{src:"http://img1.vued.vanthink.cn/vued9c8e7e738ff94abee23eb69d7f1401e9.png"}}),t._v(" "),n("text",{staticClass:"btn-text"},[t._v("返回")])]):t._e(),t._v(" "),t.rightCorner?n("div",{staticClass:"btn-icon-left",on:{click:t.goHome}},[n("image",{staticClass:"btn-arrow-left",attrs:{src:"rightCorner.src"}}),t._v(" "),n("text",{staticClass:"btn-text"},[t._v(t._s(t.rightCorner.text))])]):t._e(),t._v(" "),n("text",{staticClass:"title"},[t._v(t._s(t.title))])])},staticRenderFns:[]},t.exports.render._withStripped=!0},128:function(t,e,n){var r=n(70);"string"==typeof r&&(r=[[t.i,r,""]]),r.locals&&(t.exports=r.locals);n(2)("2241ae43",r,!1)},13:function(t,e,n){var r=n(7);"string"==typeof r&&(r=[[t.i,r,""]]),r.locals&&(t.exports=r.locals);n(2)("56c2cc84",r,!1)},166:function(t,e,n){"use strict";n(3);var r=n(29);r.el="#root",new Vue(r)},2:function(t,e,n){function r(t){for(var e=0;e<t.length;e++){var n=t[e],r=d[n.id];if(r){r.refs++;for(var o=0;o<r.parts.length;o++)r.parts[o](n.parts[o]);for(;o<n.parts.length;o++)r.parts.push(s(n.parts[o]));r.parts.length>n.parts.length&&(r.parts.length=n.parts.length)}else{for(var i=[],o=0;o<n.parts.length;o++)i.push(s(n.parts[o]));d[n.id]={id:n.id,refs:1,parts:i}}}}function o(){var t=document.createElement("style");return t.type="text/css",u.appendChild(t),t}function s(t){var e,n,r=document.querySelector('style[data-vue-ssr-id~="'+t.id+'"]');if(r){if(v)return h;r.parentNode.removeChild(r)}if(g){var s=f++;r=p||(p=o()),e=i.bind(null,r,s,!1),n=i.bind(null,r,s,!0)}else r=o(),e=a.bind(null,r),n=function(){r.parentNode.removeChild(r)};return e(t),function(r){if(r){if(r.css===t.css&&r.media===t.media&&r.sourceMap===t.sourceMap)return;e(t=r)}else n()}}function i(t,e,n,r){var o=n?"":r.css;if(t.styleSheet)t.styleSheet.cssText=x(e,o);else{var s=document.createTextNode(o),i=t.childNodes;i[e]&&t.removeChild(i[e]),i.length?t.insertBefore(s,i[e]):t.appendChild(s)}}function a(t,e){var n=e.css,r=e.media,o=e.sourceMap;if(r&&t.setAttribute("media",r),o&&(n+="\n/*# sourceURL="+o.sources[0]+" */",n+="\n/*# sourceMappingURL=data:application/json;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(o))))+" */"),t.styleSheet)t.styleSheet.cssText=n;else{for(;t.firstChild;)t.removeChild(t.firstChild);t.appendChild(document.createTextNode(n))}}var l="undefined"!=typeof document;if("undefined"!=typeof DEBUG&&DEBUG&&!l)throw new Error("vue-style-loader cannot be used in a non-browser environment. Use { target: 'node' } in your Webpack config to indicate a server-rendering environment.");var c=n(4),d={},u=l&&(document.head||document.getElementsByTagName("head")[0]),p=null,f=0,v=!1,h=function(){},g="undefined"!=typeof navigator&&/msie [6-9]\b/.test(navigator.userAgent.toLowerCase());t.exports=function(t,e,n){v=n;var o=c(t,e);return r(o),function(e){for(var n=[],s=0;s<o.length;s++){var i=o[s],a=d[i.id];a.refs--,n.push(a)}e?(o=c(t,e),r(o)):o=[];for(var s=0;s<n.length;s++){var a=n[s];if(0===a.refs){for(var l=0;l<a.parts.length;l++)a.parts[l]();delete d[a.id]}}}};var x=function(){var t=[];return function(e,n){return t[e]=n,t.filter(Boolean).join("\n")}}()},29:function(t,e,n){n(128);var r=n(1)(n(56),n(101),null,null);r.options.__file="/Users/ali-130257n/www2/svgapp/src/pages/com-gradient.vue",r.esModule&&Object.keys(r.esModule).some(function(t){return"default"!==t&&"__esModule"!==t})&&console.error("named exports are not supported in *.vue files."),r.options.functional&&console.error("[vue-loader] com-gradient.vue: functional components are not supported with templates, they should use render functions."),t.exports=r.exports},3:function(t,e,n){"use strict"},4:function(t,e){t.exports=function(t,e){for(var n=[],r={},o=0;o<e.length;o++){var s=e[o],i=s[0],a=s[1],l=s[2],c=s[3],d={id:t+":"+o,css:a,media:l,sourceMap:c};r[i]?r[i].parts.push(d):n.push(r[i]={id:i,parts:[d]})}return n}},56:function(t,e,n){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}var o=n(10),s=r(o);t.exports={components:{navbar:s.default}}},6:function(t,e,n){"use strict";var r=weex.requireModule("navigator");t.exports={props:{title:{default:"Title",type:String},back:{default:!1,type:Boolean}},methods:{goHome:function(){r.pop()}}}},7:function(t,e,n){e=t.exports=n(0)(),e.push([t.i,"\n.navbar{\n  z-index: 200;\n  position: fixed;\n  left:0;\n  right: 0;\n  top:0;\n  display:flex;\n  flex-direction: row;\n  height: 88px;\n  background-color: #fff;\n  align-items: center;\n  border-bottom-width: 2px;\n  border-bottom-style: solid;\n  border-bottom-color: #ddd;\n}\n.btn-icon-left{\n  z-index:10;\n  flex-direction: row;\n  align-items: center;\n  width: 180px;\n}\n.btn-arrow-left{\n  width: 60px;\n  height: 60px;\n  margin-left: 10px;\n}\n.btn-text{\n  color: #0f89f5;\n}\n.title{\n  position: absolute;\n  left:0;\n  right:0;\n  top:0;\n  height: 88px;\n  line-height: 88px;\n  font-size: 34px;\n  text-align: center;\n}\n",""])},70:function(t,e,n){e=t.exports=n(0)(),e.push([t.i,"\n.page{\n  flex: 1;\n  padding-top: 20px;\n  background-color: #fff;\n}\n.main{\n  padding-top: 88px;\n}\n.desc{\n  margin: 20px;\n  font-size: 28px;\n  text-align: left;\n  color: #444;\n}\n.item{\n  align-items: center;\n  margin: 20px;\n  padding: 10px;\n  border-bottom: 2px solid #ddd;\n}\n.item-shape{\n  width: 600px;\n  height: 480px;\n}\n",""])}});
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId])
+/******/ 			return installedModules[moduleId].exports;
+
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			exports: {},
+/******/ 			id: moduleId,
+/******/ 			loaded: false
+/******/ 		};
+
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+
+/******/ 		// Flag the module as loaded
+/******/ 		module.loaded = true;
+
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+
+
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(0);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ 0:
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = []
+
+	/* styles */
+	__vue_styles__.push(__webpack_require__(28)
+	)
+
+	/* script */
+	__vue_exports__ = __webpack_require__(29)
+
+	/* template */
+	var __vue_template__ = __webpack_require__(30)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/ali-130257n/www/weex-svg/demos/pages/com-gradient.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	__vue_options__._scopeId = "data-v-6d8b7c72"
+	__vue_options__.style = __vue_options__.style || {}
+	__vue_styles__.forEach(function (module) {
+	  for (var name in module) {
+	    __vue_options__.style[name] = module[name]
+	  }
+	})
+	if (typeof __register_static_styles__ === "function") {
+	  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+	}
+
+	module.exports = __vue_exports__
+	module.exports.el = 'true'
+	new Vue(module.exports)
+
+
+/***/ },
+
+/***/ 9:
+/***/ function(module, exports) {
+
+	module.exports = {
+	  "navbar": {
+	    "zIndex": 200,
+	    "position": "fixed",
+	    "left": 0,
+	    "right": 0,
+	    "top": 0,
+	    "display": "flex",
+	    "flexDirection": "row",
+	    "height": 88,
+	    "backgroundColor": "#ffffff",
+	    "alignItems": "center",
+	    "borderBottomWidth": 2,
+	    "borderBottomStyle": "solid",
+	    "borderBottomColor": "#dddddd"
+	  },
+	  "btn-icon-left": {
+	    "zIndex": 10,
+	    "flexDirection": "row",
+	    "alignItems": "center",
+	    "width": 180
+	  },
+	  "btn-arrow-left": {
+	    "width": 60,
+	    "height": 60,
+	    "marginLeft": 10
+	  },
+	  "btn-text": {
+	    "color": "#0f89f5"
+	  },
+	  "title": {
+	    "position": "absolute",
+	    "left": 0,
+	    "right": 0,
+	    "top": 0,
+	    "height": 88,
+	    "lineHeight": 88,
+	    "fontSize": 34,
+	    "textAlign": "center"
+	  }
+	}
+
+/***/ },
+
+/***/ 10:
+/***/ function(module, exports) {
+
+	'use strict';
+
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+
+	var navigator = weex.requireModule('navigator');
+	module.exports = {
+	  props: {
+	    title: {
+	      default: 'Title',
+	      type: String
+	    },
+	    back: {
+	      default: false,
+	      type: Boolean
+	    }
+	  },
+	  methods: {
+	    goHome: function goHome() {
+	      navigator.pop();
+	    }
+	  }
+	};
+
+/***/ },
+
+/***/ 11:
+/***/ function(module, exports) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('div', {
+	    staticClass: ["navbar"]
+	  }, [(_vm.leftCorner) ? _c('div', {
+	    staticClass: ["btn-icon-left"],
+	    on: {
+	      "click": _vm.goHome
+	    }
+	  }, [_c('image', {
+	    staticClass: ["btn-arrow-left"],
+	    attrs: {
+	      "src": _vm.leftCorner.src
+	    }
+	  }), _c('text', {
+	    staticClass: ["btn-text"]
+	  }, [_vm._v(_vm._s(_vm.leftCorner.text))])]) : _vm._e(), (_vm.back) ? _c('div', {
+	    staticClass: ["btn-icon-left"],
+	    on: {
+	      "click": _vm.goHome
+	    }
+	  }, [_c('image', {
+	    staticClass: ["btn-arrow-left"],
+	    attrs: {
+	      "src": "http://img1.vued.vanthink.cn/vued9c8e7e738ff94abee23eb69d7f1401e9.png"
+	    }
+	  }), _c('text', {
+	    staticClass: ["btn-text"]
+	  }, [_vm._v("返回")])]) : _vm._e(), (_vm.rightCorner) ? _c('div', {
+	    staticClass: ["btn-icon-left"],
+	    on: {
+	      "click": _vm.goHome
+	    }
+	  }, [_c('image', {
+	    staticClass: ["btn-arrow-left"],
+	    attrs: {
+	      "src": "rightCorner.src"
+	    }
+	  }), _c('text', {
+	    staticClass: ["btn-text"]
+	  }, [_vm._v(_vm._s(_vm.rightCorner.text))])]) : _vm._e(), _c('text', {
+	    staticClass: ["title"]
+	  }, [_vm._v(_vm._s(_vm.title))])])
+	},staticRenderFns: []}
+	module.exports.render._withStripped = true
+
+/***/ },
+
+/***/ 19:
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = []
+
+	/* styles */
+	__vue_styles__.push(__webpack_require__(9)
+	)
+
+	/* script */
+	__vue_exports__ = __webpack_require__(10)
+
+	/* template */
+	var __vue_template__ = __webpack_require__(11)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/ali-130257n/www/weex-svg/demos/include/navbar.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	__vue_options__._scopeId = "data-v-75f1a292"
+	__vue_options__.style = __vue_options__.style || {}
+	__vue_styles__.forEach(function (module) {
+	  for (var name in module) {
+	    __vue_options__.style[name] = module[name]
+	  }
+	})
+	if (typeof __register_static_styles__ === "function") {
+	  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+	}
+
+	module.exports = __vue_exports__
+
+
+/***/ },
+
+/***/ 28:
+/***/ function(module, exports) {
+
+	module.exports = {
+	  "page": {
+	    "flex": 1,
+	    "paddingTop": 20,
+	    "backgroundColor": "#ffffff"
+	  },
+	  "main": {
+	    "paddingTop": 88
+	  },
+	  "desc": {
+	    "margin": 20,
+	    "fontSize": 28,
+	    "textAlign": "left",
+	    "color": "#444444"
+	  },
+	  "item": {
+	    "alignItems": "center",
+	    "margin": 20,
+	    "padding": 10,
+	    "borderBottom": "2px solid #ddd"
+	  },
+	  "item-shape": {
+	    "width": 600,
+	    "height": 480
+	  }
+	}
+
+/***/ },
+
+/***/ 29:
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _navbar = __webpack_require__(19);
+
+	var _navbar2 = _interopRequireDefault(_navbar);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	module.exports = {
+	  components: {
+	    navbar: _navbar2.default
+	  }
+
+	}; //
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+
+/***/ },
+
+/***/ 30:
+/***/ function(module, exports) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('div', {
+	    staticClass: ["page"]
+	  }, [_c('navbar', {
+	    attrs: {
+	      "back": "true",
+	      "title": "gradient"
+	    }
+	  }), _c('scroller', {
+	    staticClass: ["main"]
+	  }, [_c('text', {
+	    staticClass: ["desc"]
+	  }, [_vm._v("The linearGradient element lets users define linear gradients to fill or stroke graphical elements")]), _c('div', {
+	    staticClass: ["item"]
+	  }, [_c('svg', {
+	    staticClass: ["item-shape"]
+	  }, [_c('defs', [_c('linearGradient', {
+	    attrs: {
+	      "id": "myLinearGradient1",
+	      "x1": "0%",
+	      "y1": "0%",
+	      "x2": "100%",
+	      "y2": "0%",
+	      "spreadMethod": "pad"
+	    }
+	  }, [_c('stop', {
+	    attrs: {
+	      "offset": "0%",
+	      "stopColor": "#ee0979",
+	      "stopOpacity": "1"
+	    }
+	  }), _c('stop', {
+	    attrs: {
+	      "offset": "100%",
+	      "stopColor": "#ff6a00",
+	      "stopOpacity": "1"
+	    }
+	  })], 1)], 1), _c('rect', {
+	    attrs: {
+	      "x": "100",
+	      "y": "50",
+	      "width": "300",
+	      "height": "300",
+	      "fill": "url(#myLinearGradient1)"
+	    }
+	  })], 1), _c('text', {
+	    staticClass: ["desc"]
+	  }, [_vm._v("linearGradient")])], 1), _c('text', {
+	    staticClass: ["desc"]
+	  }, [_vm._v("Radial gradients are gradients in which the colors change circularly rather than linearly")]), _c('div', {
+	    staticClass: ["item"]
+	  }, [_c('svg', {
+	    staticClass: ["item-shape"]
+	  }, [_c('defs', [_c('radialGradient', {
+	    attrs: {
+	      "id": "myRadialGradient",
+	      "cx": "20%",
+	      "cy": "50%",
+	      "r": "45%",
+	      "spreadMethod": "pad"
+	    }
+	  }, [_c('stop', {
+	    attrs: {
+	      "offset": "0%",
+	      "stopColor": "#4776E6",
+	      "stopOpacity": "1"
+	    }
+	  }), _c('stop', {
+	    attrs: {
+	      "offset": "100%",
+	      "stopColor": "#8E54E9",
+	      "stopOpacity": "1"
+	    }
+	  })], 1)], 1), _c('circle', {
+	    attrs: {
+	      "cx": "300",
+	      "cy": "200",
+	      "r": "150",
+	      "fill": "url(#myRadialGradient)"
+	    }
+	  })], 1), _c('text', {
+	    staticClass: ["desc"]
+	  }, [_vm._v("radialGradient")])], 1)])], 1)
+	},staticRenderFns: []}
+	module.exports.render._withStripped = true
+
+/***/ }
+
+/******/ });
